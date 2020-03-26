@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./style/style.css" rel="stylesheet" type="text/css" />
+  <title>Summit</title>
+  <meta property="og:title" content="Summit" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://summit.beatsturning.com" />
+  <meta property="og:image" content="https://summit.beatsturning.com/favicons/thumbnail.png" />
+  <meta property="og:site_name" content="Summit by Silhouette" />
+  <meta property="og:locale" content="en_US">
+  <meta property="og:description" content="The Pinnacle of Music.">
+</head>
+<body>
+  <div id=load>Loading</div>
+  <audio id=audio crossorigin="anonymous" src="http://server.beatsturning.com:8000/96"></audio>
+  <canvas id="canvas" width="800" height="350" style="display:none"></canvas>
+  <div class=background id=background></div>
+  <div id=logo></div>
+  <div id=fog-1></div>
+  <div id=fog-2></div>
+  <h2 id=silhouette-tag>By Silhouette</h2>
+  <div class=mountain id=mountain><div id=fade></div></div>
+  <div id=body>
+    <h2 id=top-header>This is the Pinnacle of Music.</h2>
+  </div>
+<script src="./script/jq.js"></script>
+<script src="https://beatsturning.com/data/summit-status.js"></script>
+<script src="./script/script.js"></script>
+</body>
+</html>
