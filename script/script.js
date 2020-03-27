@@ -11,6 +11,7 @@ $(window).on("load", function() {
 	}).done(function(title) {
 		if (title.startsWith('"live:summit') == true) {
 			failed = false;
+			alert('dark');
 			document.getElementById("background").id = "night-background";
 			document.getElementById("mountain").id = "night-mountain";
 			document.documentElement.style.setProperty('--foreground-color', 'white');
