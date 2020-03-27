@@ -221,7 +221,7 @@ body {
 	font-size: 3em;
 	text-align: center;
 	padding-top: 200px;
-	background-color: var(--background-container);
+	background-color: var(--background-color);
 	color: var(--foreground-color);
 }
 
@@ -288,7 +288,6 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	height: calc(100% - 1px);
-	letter-spacing: 0.1em;
 }
 
 #canvas {
