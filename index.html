@@ -17,12 +17,15 @@
   <canvas id=canvas width="800" height="350" style="display:none"></canvas>
   <div class=background id=background></div>
   <div id=logo></div>
-  <div id=fog-1></div>
-  <div id=fog-2></div>
+  <!--<div id=fog-1></div>
+  <div id=fog-2></div>-->
   <h2 id=silhouette-tag>By Silhouette</h2>
   <div class=mountain id=mountain><div id=fade></div></div>
   <div id=control>
-	<img src="./style/images/play.svg" />
+	<a class=btn-slice onClick="streamToggle()">
+		<div class=top><span>Play</span></div>
+		<div class=bottom><span>Play</span></div>
+	</a>
   </div>
   <div id=body>
     <h2 id=top-header>This is the Pinnacle of Music.</h2>
