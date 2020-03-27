@@ -75,7 +75,7 @@ setInterval(function() {
 		url: "https://beatsturning.com/title.php",
 		data: {}
 	}).done(function(title) {
-		if (title.startsWith('"live:summit') == failed) {
+		if (title.startsWith('"mix:summit') == failed) {
 			location.reload();
 		}
 	});
