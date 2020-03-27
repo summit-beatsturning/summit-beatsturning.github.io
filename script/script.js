@@ -13,6 +13,8 @@ $(window).on("load", function() {
 			failed = false;
 			document.getElementById("background").id = "night-background";
 			document.getElementById("mountain").id = "night-mountain";
+			document.documentElement.style.setProperty('--foreground-color', 'white');
+			document.documentElement.style.setProperty('--background-color', 'black');
 			//document.getElementById('fog-1').style.opacity = 0.3;
 			//document.getElementById('fog-2').style.opacity = 0.3;
 			document.getElementById("body").id = "night-body";
@@ -93,15 +95,13 @@ function streamToggle() {
 }
 
 function streamPlay() {
-	document.querySelectorAll('.btn-slice span')[0].innerHTML = 'Pause';
-	document.querySelectorAll('.btn-slice span')[1].innerHTML = 'Pause';
+	document.getElementById('control').innerHTML = 'Pause';
 	audio.play();
 	streamplaying = 1;
 }
 
 function streamStop() {
-	document.querySelectorAll('.btn-slice span')[0].innerHTML = 'Play';
-	document.querySelectorAll('.btn-slice span')[1].innerHTML = 'Play';
+	document.getElementById('control').innerHTML = 'Play';
 	audio.pause();
 	streamplaying = 0;
 }
@@ -117,10 +117,8 @@ setInterval(function() {
 	document.getElementById('control').style.marginTop = -document.documentElement.scrollTop / 4 + 'px';
 	document.getElementsByClassName('background')[0].style.filter = "grayscale(" + (frequencyData / 255 * 100) + "%)";
 	if (audio.paused != false) {
-		document.querySelectorAll('.btn-slice span')[0].innerHTML = 'Pause';
-		document.querySelectorAll('.btn-slice span')[1].innerHTML = 'Pause';
+		document.getElementById('control').innerHTML = 'Pause';
 	} else {
-		document.querySelectorAll('.btn-slice span')[0].innerHTML = 'Play';
-		document.querySelectorAll('.btn-slice span')[1].innerHTML = 'Play';
+		document.getElementById('control').innerHTML = 'Play';
 	}
 }, 0);

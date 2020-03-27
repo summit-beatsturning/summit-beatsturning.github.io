@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="./style/style.css" rel="stylesheet" type="text/css" />
-  <title>Summit</title>
-  <meta property="og:title" content="Summit" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://summit.beatsturning.com" />
-  <meta property="og:image" content="https://summit.beatsturning.com/favicons/thumbnail.png" />
-  <meta property="og:site_name" content="Summit by Silhouette" />
-  <meta property="og:locale" content="en_US">
-  <meta property="og:description" content="The Pinnacle of Music.">
+	<link href="./style/style.css" rel="stylesheet" type="text/css" />
+	<title>Summit</title>
+	<meta property="og:title" content="Summit" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://summit.beatsturning.com" />
+	<meta property="og:image" content="https://summit.beatsturning.com/favicons/thumbnail.png" />
+	<meta property="og:site_name" content="Summit by Silhouette" />
+	<meta property="og:locale" content="en_US">
+	<meta property="og:description" content="The Pinnacle of Music.">
 </head>
 <body>
-  <div id=load>Loading</div>
-  <audio id=audio crossorigin="anonymous" src="http://server.beatsturning.com:8000/96"></audio>
-  <canvas id=canvas width="800" height="350" style="display:none"></canvas>
-  <div class=background id=background></div>
-  <div id=logo></div>
-  <!--<div id=fog-1></div>
-  <div id=fog-2></div>-->
-  <h2 id=silhouette-tag>By Silhouette</h2>
-  <div class=mountain id=mountain><div id=fade></div></div>
-  <div id=control>
-	<a class=btn-slice onClick="streamToggle()">
-		<div class=top><span>Play</span></div>
-		<div class=bottom><span>Play</span></div>
-	</a>
-  </div>
-  <div id=body>
-    <h2 id=top-header>This is the Pinnacle of Music.</h2>
-	<div id=artistcontainer>
-		
+	<div id=load>Loading</div>
+	<audio id=audio crossorigin="anonymous" src="http://server.beatsturning.com:8000/96"></audio>
+	<canvas id=canvas style="display:none"></canvas>
+	<div class=background id=background></div>
+	<div id=logo></div>
+	<!--<div id=fog-1></div>
+	<div id=fog-2></div>-->
+	<h2 id=silhouette-tag>By Silhouette</h2>
+	<div class=mountain id=mountain><div id=fade></div></div>
+	<div id=control onClick="streamToggle()">Play</div>
+	<div id=body>
+		<h2 id=top-header>This is the Pinnacle of Music.</h2>
+		<div id=artistcontainer>
+			<span onClick="">mylen</span>
+			<span>brigsy</span>
+			<span>champion</span>
+			<span>joeturksta</span>
+			<span>mylky</span>
+			<span>james inder</span>
+			<span>tenze</span>
+			<span>audio junkie</span>
+			<span>connor tomoana</span>
+			<span>twentytwo</span>
+			<span>chiccoreli</span>
+		</div>
+		<div id=lineup>
+			<h2>The Lineup</h2>
+			<div>
+				<div><span class=time>00:00</span><span class=artist><span>mylen</span></span></div>
+				<div><span class=time>01:00</span><span class=artist><span>champion</span></span></div>
+				<div><span class=time>02:00</span><span class=artist><span>joeturksta</span></span></div>
+				<div><span class=time>03:00</span><span class=artist><span>mylky</span></span></div>
+				<div><span class=time>04:00</span><span class=artist><span>james inder</span></span></div>
+				<div><span class=time>05:00</span><span class=artist><span>tenze</span></span></div>
+				<div><span class=time>06:00</span><span class=artist><span>audio junkie</span></span></div>
+				<div><span class=time>07:00</span><span class=artist><span>connor tomoana</span></span></div>
+				<div><span class=time>08:00</span><span class=artist><span>twentytwo</span></span></div>
+				<div><span class=time>09:00</span><span class=artist><span>chiccoreli</span></span></div>
+			</div>
+		</div>
 	</div>
-  </div>
-<script src="./script/jq.js"></script>
-<script src="https://beatsturning.com/data/summit-status.js"></script>
-<script src="./script/script.js"></script>
+	<script src="./script/jq.js"></script>
+	<script src="https://beatsturning.com/data/summit-status.js"></script>
+	<script src="./script/script.js"></script>
 </body>
 </html>
