@@ -9,9 +9,8 @@ $(window).on("load", function() {
 		url: "https://beatsturning.com/title.php",
 		data: {}
 	}).done(function(title) {
-		if (title.startsWith('"live:summit') == true) {
+		if (title.startsWith('"mix:summit') == true) {
 			failed = false;
-			alert('dark');
 			document.getElementById("background").id = "night-background";
 			document.getElementById("mountain").id = "night-mountain";
 			document.documentElement.style.setProperty('--foreground-color', 'white');
