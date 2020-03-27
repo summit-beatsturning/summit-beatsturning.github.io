@@ -263,6 +263,7 @@ body {
 	font-size: 4em;
 	position: relative;
 	top: 12px;
+	letter-spacing: 0.1em;
 }
 
 #lineup .artist {
@@ -287,6 +288,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	height: calc(100% - 1px);
+	letter-spacing: 0.1em;
 }
 
 #canvas {
