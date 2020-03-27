@@ -97,6 +97,7 @@ body {
 	background-size: contain;
 	animation: marqee 15s linear infinite;
 	z-index: 51;
+	pointer-events: none;
 }
 
 #fog-2 {
@@ -111,6 +112,7 @@ body {
 	background-size: contain;
 	animation: marqee 10s linear infinite;
 	z-index: 51;
+	pointer-events: none;
 }
 
 @keyframes marqee {
@@ -124,6 +126,7 @@ body {
 	height: 100px;
 	width: 100%;
 	background-image: linear-gradient(transparent, black);
+	pointer-events: none;
 }
 
 #mountain #fade {
@@ -132,6 +135,7 @@ body {
 	height: 100px;
 	width: 100%;
 	background-image: linear-gradient(transparent, white);
+	pointer-events: none;
 }
 
 #silhouette-tag {
@@ -144,6 +148,7 @@ body {
 	z-index: 2;
 	font-size: 1.7em;
 	color: white;
+	cursor: pointer;
 }
 
 #body {
@@ -171,4 +176,30 @@ body {
 
 #night-body #top-header {
 	color: white;
+}
+
+#control {
+	position: absolute;
+	width: 80px;
+	left: calc(50% - 50px);
+	top: calc(100vh - 200px);
+	z-index: 49;
+	height: 80px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.1s;
+	margin: 0px;
+}
+
+#control img {
+	height: 100%;
+	transition: width 0.3s;
+	margin: 0px;
+}
+
+#control:hover {
+	height: 110px;
+	width: 110px;
+	left: calc(50% - 55px);
+	top: calc(100vh - 205px);
 }

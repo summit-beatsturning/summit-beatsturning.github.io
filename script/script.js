@@ -11,16 +11,16 @@ setInterval(function() {
 
 window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext;
 
-var failed = false;
+var failed = true;
 
-window.onload = function() {
+$(window).on("load", function() {
     var audio = document.getElementById('audio');
 	$.ajax({
 		type: "POST",
 		url: "https://beatsturning.com/title.php",
 		data: {}
 	}).done(function(title) {
-		if (title.startsWith('"mix:summit') == true) {
+		if (title.startsWith('"live:summit') == true) {
 			failed = false;
 			document.getElementById("background").id = "night-background";
 			document.getElementById("mountain").id = "night-mountain";
@@ -82,9 +82,8 @@ window.onload = function() {
 		}
 		document.getElementById('load').style.opacity = 0;
 		document.getElementById('load').style.pointerEvents = 'none';
-		audio.play();
 	});
-};
+});
 
 setInterval(function() {
 	$.ajax({
@@ -92,7 +91,7 @@ setInterval(function() {
 		url: "https://beatsturning.com/title.php",
 		data: {}
 	}).done(function(title) {
-		if (title.startsWith('"mix:summit') == failed) {
+		if (title.startsWith('"live:summit') == failed) {
 			location.reload();
 		}
 	});
