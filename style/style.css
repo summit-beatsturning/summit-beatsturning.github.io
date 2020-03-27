@@ -184,6 +184,9 @@ body {
 	letter-spacing: 0.05em;
 	text-align: center;
 	padding-top: 25vh;
+	background-color: var(--background-color);
+	position: relative;
+	z-index: 2;
 }
 
 #night-body #top-header {
