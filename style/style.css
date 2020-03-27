@@ -27,7 +27,7 @@ body {
 	left: 0px;
 	width: 100%;
 	height: 100vh;
-	z-index: 50;
+	z-index: 50 !important;
 	transition: opacity 0.8s;
 	color: black;
 	font-family: sledge;
@@ -71,7 +71,7 @@ body {
 	background-position: center;
 	height: calc(100vh + 100px);
 	position: relative;
-	z-index: 1;
+	z-index: 1 !important;
 	filter: blur(0px);
 }
 
@@ -81,7 +81,7 @@ body {
 	background-position: center;
 	height: calc(100vh + 100px);
 	position: relative;
-	z-index: 1;
+	z-index: 1 !important;
 	filter: blur(0px);
 	filter: grayscale(90%) brightness(50%);
 }
@@ -157,7 +157,7 @@ body {
 	width: 100%;
 	text-align: center;
 	top: calc(100vh - 100px);
-	z-index: 2;
+	z-index: 2 !important;
 	font-size: 1.7em;
 	color: white;
 	cursor: pointer;
@@ -167,14 +167,14 @@ body {
 	height: 500px;
 	background-color: white;
 	position: relative;
-	z-index: 2
+	z-index: 2 !important;
 }
 
 #night-body {
 	height: 500px;
 	background-color: black;
 	position: relative;
-	z-index: 2
+	z-index: 2 !important;
 }
 
 #top-header {
@@ -195,7 +195,7 @@ body {
 	width: 150px;
 	left: calc(50% - 77px);
 	top: calc(100vh - 200px);
-	z-index: 1;
+	z-index: 1 !important;
 	height: 60px;
 	text-align: center;
 	cursor: pointer;
@@ -213,7 +213,7 @@ body {
 #control:hover {
 	background-color: white;
 	letter-spacing: 0.13em;
-	color: var(--foreground-color);
+	color: black;
 }
 
 #artistcontainer {
