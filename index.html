@@ -16,16 +16,21 @@
 	<meta property="og:description" content="THIS IS THE PINNACLE OF MUSIC">
 </head>
 <body>
-	<div id=load>Loading</div>
-	<audio id=audio crossorigin="anonymous" src="https://str2b.openstream.co/1035?aw_0_1st.collectionid=3849&stationId=3849&publisherId=1059"></audio>
-	<canvas id=canvas style="display:none"></canvas>
-	<div class=background id=background></div>
-	<div id=logo></div>
-	<!--<div id=fog-1></div>
-	<div id=fog-2></div>-->
-	<h2 id=silhouette-tag>By Silhouette</h2>
-	<div class=mountain id=mountain><div id=fade></div></div>
-	<div id=control onClick="streamToggle()">Play</div>
+	<audio id=audio crossorigin="anonymous" src="http://server.beatsturning.com:8000/96"></audio>
+	<script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+	<div id=livestream>
+	<script type="text/javascript">
+		var options = {
+			width: "100%",
+			height: "100%",
+			channel: "beatsturning", 
+			controls: false,     
+		};
+		var player = new Twitch.Player("livestream", options);
+		player.setVolume(1);
+	</script>
+	</div>
+	<div id=fade></div>
 	<div id=body>
 		<h2 id=top-header>This is the Pinnacle of Music.</h2>
 		<div id=artistcontainer>
@@ -42,18 +47,42 @@
 			<span>chiccoreli</span>
 		</div>
 		<div id=lineup>
-			<h2>The Lineup</h2>
-			<div>
-				<div><span class=time>00:00</span><span class=artist><span>mylen</span></span></div>
-				<div><span class=time>01:00</span><span class=artist><span>champion</span></span></div>
-				<div><span class=time>02:00</span><span class=artist><span>joeturksta</span></span></div>
-				<div><span class=time>03:00</span><span class=artist><span>mylky</span></span></div>
-				<div><span class=time>04:00</span><span class=artist><span>james inder</span></span></div>
-				<div><span class=time>05:00</span><span class=artist><span>tenze</span></span></div>
-				<div><span class=time>06:00</span><span class=artist><span>audio junkie</span></span></div>
-				<div><span class=time>07:00</span><span class=artist><span>connor tomoana</span></span></div>
-				<div><span class=time>08:00</span><span class=artist><span>twentytwo</span></span></div>
-				<div><span class=time>09:00</span><span class=artist><span>chiccoreli</span></span></div>
+			<h2 style="font-size:6em">The Lineup</h2>
+			<div class=lineup-line>
+				<h2>Friday</h2>
+				<div><span class=time>15:00</span><span class=artist><span>audio junkie</span></span></div>
+				<div><span class=time>16:00</span><span class=artist><span>skynilla</span></span></div>
+				<div><span class=time>17:00</span><span class=artist><span>afta dina mint</span></span></div>
+				<div><span class=time>18:00</span><span class=artist><span>grommie</span></span></div>
+				<div><span class=time>19:00</span><span class=artist><span>duzra</span></span></div>
+				<div><span class=time>20:00</span><span class=artist><span>blueprint</span></span></div>
+				<div><span class=time>21:00</span><span class=artist><span>hailure</span></span></div>
+				<div><span class=time>22:00</span><span class=artist><span>cortr</span></span></div>
+				<div><span class=time>23:00</span><span class=artist><span>mylky</span></span></div>
+			</div>
+			<div class=lineup-line>
+				<h2>Saturday</h2>
+				<div><span class=time>15:00</span><span class=artist><span>brigsy</span></span></div>
+				<div><span class=time>16:00</span><span class=artist><span>tollo</span></span></div>
+				<div><span class=time>17:00</span><span class=artist><span>burnzy</span></span></div>
+				<div><span class=time>18:00</span><span class=artist><span>tenze</span></span></div>
+				<div><span class=time>19:00</span><span class=artist><span>revell</span></span></div>
+				<div><span class=time>20:00</span><span class=artist><span>csm</span></span></div>
+				<div><span class=time>21:00</span><span class=artist><span>melt</span></span></div>
+				<div><span class=time>22:00</span><span class=artist><span>worthy</span></span></div>
+				<div><span class=time>23:00</span><span class=artist><span>mylen</span></span></div>
+			</div>
+			<div class=lineup-line>
+				<h2>Sunday</h2>
+				<div style="opacity:0;pointer-events:none"><span class=time>15:00</span><span class=artist><span></span></span></div>
+				<div style="opacity:0;pointer-events:none"><span class=time>16:00</span><span class=artist><span></span></span></div>
+				<div style="opacity:0;pointer-events:none"><span class=time>17:00</span><span class=artist><span></span></span></div>
+				<div><span class=time>18:00</span><span class=artist><span>charlie jennison</span></span></div>
+				<div><span class=time>19:00</span><span class=artist><span>joe turksta</span></span></div>
+				<div><span class=time>20:00</span><span class=artist><span>joel c</span></span></div>
+				<div><span class=time>21:00</span><span class=artist><span>champion</span></span></div>
+				<div style="opacity:0;pointer-events:none"><span class=time></span><span class=artist><span></span></span></div>
+				<div style="opacity:0;pointer-events:none"><span class=time></span><span class=artist><span></span></span></div>
 			</div>
 		</div>
 	</div>
