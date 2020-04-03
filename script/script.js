@@ -9,6 +9,8 @@ $(window).on("load", function() {
 	}).done(function(title) {
 		if (title.startsWith('"mix:summit') == true) {
 			failed = false;
+			document.documentElement.style.setProperty('--foreground-color', 'white');
+			document.documentElement.style.setProperty('--background-color', 'black');
 		}
 		
 	});
@@ -20,11 +22,13 @@ setInterval(function() {
 		url: "https://beatsturning.com/title.php",
 		data: {}
 	}).done(function(title) {
-		if (title.startsWith('"mix:summit') == failed) {
-			location.reload();
+		if (title.startsWith('"mix:summit') == true) {
+			document.documentElement.style.setProperty('--foreground-color', 'white');
+			document.documentElement.style.setProperty('--background-color', 'black');
+		} else {
+			document.documentElement.style.setProperty('--foreground-color', 'black');
+			document.documentElement.style.setProperty('--background-color', 'white');
 		}
-		document.getElementsByClassName('avap-ads-container')[0].style.position = 'relative';
-		document.getElementsByClassName('avap-ads-container')[0].style.zIndex = '99';
 	});
 }, 59000);
 
@@ -40,7 +44,7 @@ $(document).ready(function(){
 			var hash = this.hash;
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			}, 1000, function(){  //time
+			}, 1000, function(){
 				window.location.hash = hash;
 			});
 		}
