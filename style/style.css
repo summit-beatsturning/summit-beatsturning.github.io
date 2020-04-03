@@ -249,7 +249,7 @@ body {
 	letter-spacing: 0.05em;
 	text-decoration: none;
 	animation: fade 0.5s;
-	animation-delay: 5.5s;
+	animation-delay: 7.5s;
 	animation-fill-mode: forwards;
 }
 
@@ -268,7 +268,7 @@ body {
 	height: 100vh;
 	background-color: black;
 	animation: fade 2s;
-	animation-delay: 7s;
+	animation-delay: 8s;
 	animation-fill-mode: forwards;
 	pointer-events: none;
 }
