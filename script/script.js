@@ -32,3 +32,17 @@ setInterval(function() {
 	document.getElementById('fade').style.height = "calc(100px +  " + document.documentElement.scrollTop * 1.5 + "px)";
 	document.getElementById('fade').style.top = "calc(100vh - " + document.documentElement.scrollTop * 1.5 + "px)";
 }, 0);
+
+$(document).ready(function(){
+	$("a").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 1000, function(){  //time
+				window.location.hash = hash;
+			});
+		}
+    });
+});

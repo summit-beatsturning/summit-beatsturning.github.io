@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="./style/style.css" rel="stylesheet" type="text/css" />
+	<link href="../style/audio.css" rel="stylesheet" type="text/css" />
 	<title>SUMMIT</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,23 +17,12 @@
 </head>
 <body>
 	<audio id=audio crossorigin="anonymous" src="http://server.beatsturning.com:8000/96"></audio>
-	<script crossorigin="anonymous" src= "http://player.twitch.tv/js/embed/v1.js"></script>
-	<img id=summit src="./style/images/summit text.png" />
-	<div id=audioonly><a href="./audio/">Audio Only</a></div>
-	<div id=move><a href="#artists"><img src="./style/images/arrow.svg" /></a></div>
-	<div id=livestream>
-	<script type="text/javascript">
-		var options = {
-			width: "100%",
-			height: "100%",
-			channel: "beatsturning", 
-			controls: false,
-		};
-		var player = new Twitch.Player("livestream", options);
-		player.setVolume(1);
-	</script>
-	</div>
-	<div id=fade></div>
+	<canvas id=canvas style="display:none"></canvas>
+	<div class=background id=background></div>
+	<div id=logo></div>
+	<h2 id=silhouette-tag>By Silhouette</h2>
+	<div class=mountain id=mountain><div id=fade></div></div>
+	<div id=control onClick="streamToggle()"><span id=controlspan>Play</span></div>
 	<div id=body>
 		<div id=artists>
 			<span onClick="window.open('https://www.instagram.com/officialnoughts','_blank')">noughts</span>
@@ -109,8 +98,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="./script/jq.js"></script>
-	<script src="https://beatsturning.com/data/summit-status.js"></script>
-	<script src="./script/script.js"></script>
+	<script src="../script/jq.js"></script>
+	<script src="../script/audio.js"></script>
 </body>
 </html>
