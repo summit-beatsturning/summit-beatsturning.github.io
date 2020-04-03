@@ -1,7 +1,8 @@
 var failed = true;
 
 $(window).on("load", function() {
-    var audio = document.getElementById('audio');
+	var player = new Twitch.Player("livestream", options);
+	player.setVolume(1);
 	$.ajax({
 		type: "POST",
 		url: "https://beatsturning.com/title.php",
