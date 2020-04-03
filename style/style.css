@@ -269,6 +269,8 @@ body {
 	background-color: black;
 	animation: fade 2s;
 	animation-delay: 7s;
+	animation-fill-mode: forwards;
+	pointer-events: none;
 }
 
 @keyframes fade {
