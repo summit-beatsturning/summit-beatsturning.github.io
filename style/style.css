@@ -203,6 +203,7 @@ body {
 	animation: fade 2s;
 	animation-delay: 6s;
 	animation-fill-mode: forwards;
+	z-index: 60;
 }
 
 #move {
@@ -215,6 +216,7 @@ body {
 	animation: fade 2s;
 	animation-delay: 6s;
 	animation-fill-mode: forwards;
+	z-index: 60;
 }
 
 #move img {
@@ -232,6 +234,7 @@ body {
 	width: 100%;
 	text-align: center;
 	top: calc(90vh - 100px);
+	z-index: 60;
 }
 
 #audioonly a {
@@ -254,6 +257,18 @@ body {
 	color: black;
 	background-color: white;
 	letter-spacing: 0.08em;
+}
+
+#load {
+	position: absolute;
+	z-index: 59;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	background-color: black;
+	animation: fade 2s;
+	animation-delay: 7s;
 }
 
 @keyframes fade {
