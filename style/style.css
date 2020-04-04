@@ -273,6 +273,24 @@ body {
 	pointer-events: none;
 }
 
+#fullscreen {
+	position: absolute;
+	top: calc(100vh - 50px);
+	left: calc(100% - 50px);
+	z-index: 99;
+	color: red;
+	width: 35px;
+	cursor: pointer;
+	height: 35px;
+	background-color: rgba(255,255,255,0.2);
+	padding: 5px;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+#fullscreen:hover {
+	transform: rotate(90deg);
+}
+
 @keyframes fade {
 	0% {opacity: 1}
 	90% {pointer-events: auto}

@@ -18,7 +18,6 @@
 <body>
 	<script crossorigin="anonymous" src= "https://player.twitch.tv/js/embed/v1.js"></script>
 	<img id=summit src="./style/images/summit text.png" />
-	<div id=audioonly><a href="./audio/">Audio Only</a></div>
 	<div id=move><a href="#artists"><img src="./style/images/arrow.svg" /></a></div>
 	<div id=load></div>
 	<div id=livestream>
@@ -30,34 +29,36 @@
 			controls: false,
 		};
 	</script>
+	<img id=fullscreen src="./style/images/fullscreen.svg" onClick="togglefullscreen()" />
 	</div>
 	<div id=fade></div>
 	<div style="height:100px;background-color:black"></div>
 	<div id=body>
 		<div id=artists>
-			<span onClick="window.open('https://www.instagram.com/officialnoughts','_blank')">noughts</span>
-			<span onClick="window.open('https://www.instagram.com/jodiechampion','_blank')">champion</span>
-			<span onClick="window.open('https://www.instagram.com/hailuresound','_blank')">hailure</span>
-			<span onClick="window.open('https://www.instagram.com/joeturksta','_blank')">joe turksta</span>
-			<span onClick="window.open('https://www.instagram.com/duzra','_blank')">duzra</span>
-			<span onClick="window.open('https://www.instagram.com/worthy_dnb','_blank')">worthy</span>
-			<span onClick="window.open('https://www.instagram.com/revell_dj','_blank')">r3v3ll</span>
-			<span onClick="window.open('https://www.instagram.com/joelcurran_','_blank')">joel c</span>
-			<span onClick="window.open('https://www.instagram.com/afta_dina_mint','_blank')">afta dina mint</span>
-			<span onClick="window.open('https://www.instagram.com/melt_nz','_blank')">melt</span>
-			<span onClick="window.open('https://www.instagram.com/grommie__','_blank')">grommie</span>
-			<span onClick="window.open('https://www.instagram.com/burnzymusic','_blank')">burnzy</span>
-			<span onClick="window.open('https://www.instagram.com/tollonz','_blank')">tollo</span>
-			<span onClick="window.open('https://www.instagram.com/audiojunkie__','_blank')">audio junkie</span>
-			<span onClick="window.open('https://www.instagram.com/skynilla','_blank')">skynilla</span>
-			<span onClick="window.open('https://www.instagram.com/chrissamontemartin','_blank')">csm</span>
-			<span onClick="window.open('https://www.instagram.com/tenzeofficial','_blank')">tenze</span>
-			<span onClick="window.open('https://www.instagram.com/theforevertimestudioqtnz','_blank')">phillip currie</span>
-			<span onClick="window.open('https://www.instagram.com/charlesjennison','_blank')">selecta cj</span>
-			<span onClick="window.open('https://www.instagram.com/blueprintprods','_blank')">blueprint</span>
-			<span onClick="window.open('https://www.instagram.com/cortrmusic','_blank')">cortr</span>
-			<span onClick="window.open('https://www.instagram.com/brigsynz','_blank')">brigsy</span>
-			<span onClick="window.open('https://www.instagram.com/willymavdnb','_blank')">willy mav</span>
+			<span onClick="window.open('https://www.instagram.com/officialnoughts','_blank')">noughts</span>•
+			<span onClick="window.open('https://www.instagram.com/jodiechampion','_blank')">champion</span>•
+			<span onClick="window.open('https://www.instagram.com/hailuresound','_blank')">hailure</span>•
+			<span onClick="window.open('https://www.instagram.com/joeturksta','_blank')">joe turksta</span>•
+			<span onClick="window.open('https://www.instagram.com/duzra','_blank')">duzra</span>•
+			<span onClick="window.open('https://www.instagram.com/worthy_dnb','_blank')">worthy</span>•
+			<span onClick="window.open('https://www.instagram.com/revell_dj','_blank')">r3v3ll</span>•
+			<span onClick="window.open('https://www.instagram.com/joelcurran_','_blank')">joel c</span>•
+			<span onClick="window.open('https://www.instagram.com/afta_dina_mint','_blank')">afta dina mint</span>•
+			<span onClick="window.open('https://www.instagram.com/melt_nz','_blank')">melt</span>•
+			<span onClick="window.open('https://www.instagram.com/grommie__','_blank')">grommie</span>•
+			<span onClick="window.open('https://www.instagram.com/burnzymusic','_blank')">burnzy</span>•
+			<span onClick="window.open('https://www.instagram.com/tollonz','_blank')">tollo</span>•
+			<span onClick="window.open('https://www.instagram.com/audiojunkie__','_blank')">audio junkie</span>•
+			<span onClick="window.open('https://www.instagram.com/skynilla','_blank')">skynilla</span>•
+			<span onClick="window.open('https://www.instagram.com/chrissamontemartin','_blank')">csm</span>•
+			<span onClick="window.open('https://www.instagram.com/tenzeofficial','_blank')">tenze</span>•
+			<span onClick="window.open('https://www.instagram.com/theforevertimestudioqtnz','_blank')">phillip currie</span>•
+			<span onClick="window.open('https://www.instagram.com/charlesjennison','_blank')">selecta cj</span>•
+			<span onClick="window.open('https://www.instagram.com/blueprintprods','_blank')">blueprint</span>•
+			<span onClick="window.open('https://www.instagram.com/cortrmusic','_blank')">cortr</span>•
+			<span onClick="window.open('https://www.instagram.com/brigsynz','_blank')">brigsy</span>•
+			<span onClick="window.open('https://www.instagram.com/willymavdnb','_blank')">willy mav</span>•
+			<span onClick="window.open('https://www.instagram.com/awoke_sound','_blank')">awoke</span>
 			<div></div>
 			<span style="font-size:2em" onClick="window.open('https://www.instagram.com/mylky.wav','_blank')">mylky</span>
 			<span style="font-size:2em" onClick="window.open('https://www.instagram.com/mylenofficial','_blank')">mylen</span>
@@ -68,11 +69,11 @@
 				<h2>Friday</h2>
 				<div><span class=time>13:00</span><span class=artist><span>jowsus</span></span></div>
 				<div><span class=time>14:00</span><span class=artist><span>noughts</span></span></div>
-				<div><span class=time>15:00</span><span class=artist><span>audio junkie</span></span></div>
-				<div><span class=time>16:00</span><span class=artist><span>skynilla</span></span></div>
-				<div><span class=time>17:00</span><span class=artist><span>afta dina mint</span></span></div>
-				<div><span class=time>18:00</span><span class=artist><span>grommie</span></span></div>
-				<div><span class=time>19:00</span><span class=artist><span>duzra</span></span></div>
+				<div><span class=time>15:00</span><span class=artist><span>skynilla</span></span></div>
+				<div><span class=time>16:00</span><span class=artist><span>afta dina mint</span></span></div>
+				<div><span class=time>17:00</span><span class=artist><span>grommie</span></span></div>
+				<div><span class=time>18:00</span><span class=artist><span>duzra</span></span></div>
+				<div><span class=time>19:00</span><span class=artist><span>audio junkie</span></span></div>
 				<div><span class=time>20:00</span><span class=artist><span>blueprint</span></span></div>
 				<div><span class=time>21:00</span><span class=artist><span>hailure</span></span></div>
 				<div><span class=time>22:00</span><span class=artist><span>cortr</span></span></div>
@@ -99,7 +100,7 @@
 				<div class=empty><span class=time></span><span class=artist><span></span></span></div>
 				<div class=empty><span class=time></span><span class=artist><span></span></span></div>
 				<div class=empty><span class=time></span><span class=artist><span></span></span></div>
-				<div class=empty><span class=time></span><span class=artist><span></span></span></div>
+				<div><span class=time>18:00</span><span class=artist><span>awoke</span></span></div>
 				<div><span class=time>19:00</span><span class=artist><span>selecta cj</span></span></div>
 				<div><span class=time>20:00</span><span class=artist><span>joe turksta</span></span></div>
 				<div><span class=time>21:00</span><span class=artist><span>joel c</span></span></div>
@@ -109,7 +110,6 @@
 		</div>
 	</div>
 	<script src="./script/jq.js"></script>
-	<script src="https://beatsturning.com/data/summit-status.js"></script>
 	<script src="./script/script.js"></script>
 </body>
 </html>
