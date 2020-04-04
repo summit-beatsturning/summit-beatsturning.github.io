@@ -328,6 +328,15 @@ body {
 		padding-bottom: 0px;
 	}
 }
+
+@media screen and (max-width: 600px) {
+	#lineup .time, #lineup .artist {
+		font-size: 0.6em;
+	}
+	#lineup h2 {
+		font-size: 4em;
+	}
+}
 ::-webkit-scrollbar {
 	display: none;
 }
