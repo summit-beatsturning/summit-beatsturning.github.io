@@ -297,6 +297,11 @@ body {
 	100% {opacity: 0; pointer-events: none}
 }
 
+#lineup-header {
+	font-size: 8em;
+	margin-top: 200px;
+}
+
 @media screen and (max-width: 1850px) {
 	.lineup-line {
 		display: block;
@@ -323,15 +328,21 @@ body {
 		width: calc(100% - 200px);
 		max-width: 340px;
 		padding-bottom: 0px;
+		border-bottom: none;
 	}
 	#lineup .artist span {
 		padding-bottom: 0px;
+		border-bottom: none;
+	}
+	#lineup-header {
+		font-size: 6em;
+		margin-top: 100px;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	#lineup .time, #lineup .artist {
-		font-size: 0.6em;
+		font-size: 0.4em;
 	}
 	#lineup h2 {
 		font-size: 4em;
