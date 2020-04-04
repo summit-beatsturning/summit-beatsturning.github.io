@@ -20,7 +20,10 @@
 	<img id=summit src="./style/images/summit text.png" />
 	<div id=move><a href="#artists"><img src="./style/images/arrow.svg" /></a></div>
 	<div id=load></div>
-	<div id=livestream>
+	<script>
+	var mouseTimer = 0;
+	</script>
+	<div id=livestream onmouseout="cancelTimer()">
 	<script type="text/javascript">
 		var options = {
 			width: "100%",

@@ -111,6 +111,7 @@ body {
 	margin-right: 30px;
 	cursor: pointer;
 	white-space: nowrap;
+	padding-bottom: 5px;
 }
 
 #artists span:hover {
@@ -271,6 +272,7 @@ body {
 	animation-delay: 8s;
 	animation-fill-mode: forwards;
 	pointer-events: none;
+	cursor: pointer;
 }
 
 #fullscreen {
@@ -317,9 +319,13 @@ body {
 
 @media screen and (max-width: 800px) {
 	#artists span {
-		font-size: 0.8em;
-		margin-left: 5px;
-		margin-right: 5px;
+		font-size: 0.9em;
+		display: block;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		text-align: center;
+		padding-bottom: 5px;
 	}
 	#lineup .time, #lineup .artist {
 		font-size: 3em;
@@ -333,19 +339,24 @@ body {
 	#lineup .artist span {
 		padding-bottom: 0px;
 		border-bottom: none;
+		top: 10px;
+	}
+	#lineup-header {
+		font-size: 7em;
+		margin-top: 150px;
+	}
+}
+
+@media screen and (max-width: 6000px) {
+	#lineup .time, #lineup .artist {
+		font-size: 2.7em;
+	}
+	#lineup h2 {
+		font-size: 4em;
 	}
 	#lineup-header {
 		font-size: 6em;
 		margin-top: 100px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	#lineup .time, #lineup .artist {
-		font-size: 0.4em;
-	}
-	#lineup h2 {
-		font-size: 4em;
 	}
 }
 ::-webkit-scrollbar {

@@ -59,21 +59,3 @@ function togglefullscreen() {
 		document.querySelector('#livestream').requestFullscreen();
 	}
 }
-
-var el =  document.getElementById("fullscreen");
-var timer;
-function showBtn(){
-	el.style.opacity = "1";
-}
-function hideBtn(){
-	el.style.opacity = "0";
-}
-
-hideBtn();
-document.onmousemove = function(){
-   showBtn();
-   clearTimeout(timer);
-   timer = setTimeout(function(){
-        hideBtn();
-    },200)
-}
