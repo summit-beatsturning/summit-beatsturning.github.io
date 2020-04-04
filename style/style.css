@@ -347,7 +347,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 6000px) {
+@media screen and (max-width: 600px) {
 	#lineup .time, #lineup .artist {
 		font-size: 2.7em;
 	}
