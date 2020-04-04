@@ -305,8 +305,29 @@ body {
 		max-width: 100%;
 		margin: 0px;
 	}
+	.empty {
+		display: none;
+	}
 }
 
+@media screen and (max-width: 800px) {
+	#artists span {
+		font-size: 0.8em;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	#lineup .time, #lineup .artist {
+		font-size: 3em;
+	}
+	#lineup .artist {
+		width: calc(100% - 200px);
+		max-width: 340px;
+		padding-bottom: 0px;
+	}
+	#lineup .artist span {
+		padding-bottom: 0px;
+	}
+}
 ::-webkit-scrollbar {
 	display: none;
 }
