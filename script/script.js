@@ -59,3 +59,7 @@ function togglefullscreen() {
 		document.querySelector('#livestream').requestFullscreen();
 	}
 }
+
+setInterval(function() {
+	document.getElementById('fullscreen').style.top = window.innerHeight - 50 + 'px';
+}, 0);
