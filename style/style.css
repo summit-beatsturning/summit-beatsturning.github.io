@@ -300,9 +300,24 @@ body {
 	100% {opacity: 0; pointer-events: none}
 }
 
-#lineup-header {
+.lineup-header {
 	font-size: 8em;
 	margin-top: 200px;
+}
+
+#silhouettecontainer {
+	line-height: 200px;
+	background-color: black;
+	color: white;
+	margin-top: 200px;
+}
+
+#silhouettecontainer a {
+	font-family: lemonmilk;
+	letter-spacing: 0.05em;
+	margin-left: calc(15% - 100px);
+	font-size: 2em;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 1850px) {
@@ -342,7 +357,7 @@ body {
 		border-bottom: none;
 		top: 10px;
 	}
-	#lineup-header {
+	.lineup-header {
 		font-size: 7.5em;
 		margin-top: 150px;
 	}
@@ -355,7 +370,7 @@ body {
 	#lineup h2 {
 		font-size: 4em;
 	}
-	#lineup-header {
+	.lineup-header {
 		font-size: 6m;
 		margin-top: 100px;
 	}
