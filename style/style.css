@@ -361,6 +361,12 @@ body {
 		font-size: 7.5em;
 		margin-top: 150px;
 	}
+	#silhouettecontainer a {
+		margin: 0px;
+	}
+	#silhouettecontainer {
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 600px) {
