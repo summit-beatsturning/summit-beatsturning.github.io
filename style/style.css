@@ -333,6 +333,15 @@ body {
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	#silhouettecontainer a {
+		margin: 0px;
+	}
+	#silhouettecontainer {
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	#artists span {
 		font-size: 0.9em;
@@ -360,12 +369,6 @@ body {
 	.lineup-header {
 		font-size: 7.5em;
 		margin-top: 150px;
-	}
-	#silhouettecontainer a {
-		margin: 0px;
-	}
-	#silhouettecontainer {
-		text-align: center;
 	}
 }
 
