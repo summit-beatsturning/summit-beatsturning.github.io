@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163293744-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
- 		gtag('config', 'UA-163293744-1');
-	</script>
 	<link href="./style/style.css" rel="stylesheet" type="text/css" />
 	<title>SUMMIT</title>
 	<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="THIS IS THE PINNACLE OF MUSIC">
 	<meta name="keywords" content="Eyezah, SUMMIT, Summit, Summit Concert, Summit Virtual Concert, Virtual Concert, Silhouette Radio, Silhouette">
 	<meta property="og:title" content="SUMMIT" />
@@ -43,15 +36,19 @@
 	var mouseTimer = 0;
 	</script>
 	<div id=livestream onmouseout="cancelTimer()">
-	<script type="text/javascript">
-		var options = {
-			width: "100%",
-			height: "100%",
-			channel: "beatsturning", 
-			controls: false,
-		};
-	</script>
-	<img id=fullscreen src="./style/images/fullscreen.svg" onClick="togglefullscreen()" />
+		<script type="text/javascript">
+			var options = {
+				width: "100%",
+				height: "100%",
+				channel: "beatsturning", 
+				controls: false,
+			};
+		</script>
+		<img id=fullscreen src="./style/images/fullscreen.svg" onClick="togglefullscreen()" />
+		<div id=twitchchatcontainer>
+			<iframe frameborder="400px" scrolling="no" id="beatsturning twitchchat" src="https://www.twitch.tv/embed/beatsturning/chat" height="100%" width="100%" border="none" style="margin:0px;border:none;outline:none"></iframe>
+			<div id=twitchchatbutton><div></div></div>
+		</div>
 	</div>
 	<div id=fade></div>
 	<div style="height:100px;background-color:black"></div>
@@ -132,13 +129,6 @@
 				<div style="opacity:0;pointer-events:none"><span class=time></span><span class=artist><span></span></span></div>
 			</div>
 		</div>
-		<iframe frameborder="400px"
- 		       scrolling="no"
- 		       id="beatsturning"
-  		      src="https://www.twitch.tv/embed/beatsturning/chat"
-  		      height="100vh"
-  		      width="380px">
-		</iframe>
 		<div id=silhouettecontainer>
 			<a onClick="window.open('https://beatsturning.com','_blank')">by silhouette</a>
 		</div>
