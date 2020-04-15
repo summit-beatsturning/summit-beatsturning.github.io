@@ -416,7 +416,7 @@ body {
 		right: calc(-100% + 50px);
 	}
 	#twitchchatbutton {
-		right: calc(100% - 50px);
+		right: calc(100% + 50px);
 	}
 }
 
