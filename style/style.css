@@ -413,11 +413,10 @@ body {
 		margin-top: 100px;
 	}
 	#twitchchatcontainer {
-		width: calc(100% - 50px);
-		right: calc(-100% + 50px);
+		display: none;
 	}
 	#twitchchatbutton {
-		right: 100%;
+		display: none;
 	}
 }
 
