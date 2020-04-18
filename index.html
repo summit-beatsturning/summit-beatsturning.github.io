@@ -36,16 +36,22 @@
 	var mouseTimer = 0;
 	</script>
 	<div id=livestream onmouseout="cancelTimer()">
-		<script type="text/javascript">
-			var options = {
-				width: "100%",
-				height: "100%",
-				channel: "beatsturning", 
-				controls: false,
-			};
-		</script>
-		<img id=fullscreen src="./style/images/fullscreen.svg" onClick="togglefullscreen()" />
-		<div id=twitchchatcontainer>
+
+    		<!-- Load the Twitch embed script -->
+    		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    		<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    		<script type="text/javascript">
+    		  new Twitch.Embed("livestream", {
+    		    width: '100%',
+    		    height: '100%',
+   		     channel: "beatsturning",
+   		     // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+   		     parent: ["summit.beatsturning.com", "beatsturning.com"]
+   		   });
+   		</script>
+		<img id=fullscreen src="./style/images/fullscreen.svg" onClick="togglefullscreen()" style="display:none" />
+		<div id=twitchchatcontainer style="display: none">
 			<iframe frameborder="400px" scrolling="no" id="beatsturning twitchchat" src="https://www.twitch.tv/embed/beatsturning/chat" height="100%" width="100%" border="none" style="margin:0px;border:none;outline:none"></iframe>
 			<div id=twitchchatbutton><div></div></div>
 		</div>
